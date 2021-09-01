@@ -166,6 +166,7 @@ nav {
 
 /* line 131, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .label {
+  position: relative;
   margin: 0 auto;
   height: 24px;
   width: 112px;
@@ -176,10 +177,18 @@ nav {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
 }
 
-/* line 143, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 144, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+.label_white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 148, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .title {
+  position: relative;
   margin-bottom: 0;
   margin-top: 38px;
   color: #222222;
@@ -187,18 +196,31 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
 }
 
-/* line 152, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 158, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 161, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .subtitle {
+  position: relative;
   margin-top: 19px;
-  color: #222;
+  color: #222222;
   font-size: 17px;
   font-weight: 400;
   text-align: center;
+  z-index: 2;
 }
 
-/* line 159, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 169, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+.subtitle_white {
+  color: #fff;
+}
+
+/* line 173, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .reasons .reasons_block {
   display: flex;
   justify-content: center;
@@ -206,7 +228,7 @@ nav {
   margin-top: 35px;
 }
 
-/* line 165, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 179, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .reasons .reasons_block .reasons_round {
   display: flex;
   justify-content: center;
@@ -218,12 +240,12 @@ nav {
   border-radius: 100%;
 }
 
-/* line 175, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 189, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .reasons .reasons_block .reasons_descr {
   width: 343px;
 }
 
-/* line 178, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 192, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .reasons .reasons_block .reasons_descr .reasons_subtitle {
   line-height: 21px;
   color: #1eacc7;
@@ -231,7 +253,7 @@ nav {
   font-weight: 400;
 }
 
-/* line 184, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 198, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .reasons .reasons_block .reasons_descr .reasons_text {
   color: #202020;
   font-size: 15px;
@@ -239,19 +261,19 @@ nav {
   line-height: 21px;
 }
 
-/* line 190, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 204, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile {
   min-height: 864px;
   padding: 48px 0 79px 0;
   background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
 }
 
-/* line 194, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 208, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile .row {
   margin-top: 32px;
 }
 
-/* line 196, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 210, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item {
   position: relative;
   width: 320px;
@@ -261,37 +283,37 @@ nav {
   padding-top: 92px;
 }
 
-/* line 203, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 217, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item_1 {
   background: url("../img/bg/mobile_screen_1.jpg") center center/cover no-repeat;
 }
 
-/* line 205, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 219, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item_2 {
   background: url("../img/bg/mobile_screen_2.jpg") center center/cover no-repeat;
 }
 
-/* line 207, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 221, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item_3 {
   background: url("../img/bg/mobile_screen_3.jpg") center center/cover no-repeat;
 }
 
-/* line 209, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 223, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item_4 {
   background: url("../img/bg/mobile_screen_4.jpg") center center/cover no-repeat;
 }
 
-/* line 211, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 225, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item_5 {
   background: url("../img/bg/mobile_screen_5.jpg") center center/cover no-repeat;
 }
 
-/* line 213, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 227, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item_6 {
   background: url("../img/bg/mobile_screen_6.jpg") center center/cover no-repeat;
 }
 
-/* line 215, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 229, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item_subtitle {
   color: #fff;
   font-size: 24px;
@@ -301,7 +323,7 @@ nav {
   text-align: center;
 }
 
-/* line 222, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+/* line 236, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
 .mobile_item_plus {
   display: flex;
   justify-content: center;
@@ -316,6 +338,42 @@ nav {
   bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* line 251, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+.car {
+  position: relative;
+  padding: 57px 0 138px 0;
+  min-height: 896px;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+/* line 256, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+.car .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+
+/* line 264, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+.car_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 269, ../../../../../Desktop/WWW/Ivan Petrechenko/HTML&CSS/HTML&CSS. Uber/sass/style.sass */
+.car_descr {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  color: #222222;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

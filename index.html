@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uber</title>
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -17,41 +19,46 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <div class="subheader">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-md-1">
-                        <a class="subheader_logo" href="#">
-                            <img src="/img/uber-icon.png" alt="uber-icon">
-                        </a>
-                        <div class="subheader_official">
-                            Официальный партнер Uber в Москве
-                        </div>
+                    <div class="col-6 col-md-4 offset-md-1">
+                        <a class="subheader_logo" href="#"><img src="/img/uber-icon.png" alt="uber-icon"></a>
+                        <div class="subheader_official">Официальный партнер Uber в Москве</div>
                     </div>
-                    <div class="col-md-2 offset-md-2">
+
+                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                        <div class="subheader_call">Звоните нам ежедневно</div>
                        <a class="subheader_phone" href="tel:+784957970988">8 495 797 09 88</a>
                     </div>
-                    <div class="col-md-2">
+
+                    <div class="col-6 col-md-3">
+                        <a class="xs-visible subheader_phone" href="tel:+784957970988">8 495 797 09 88</a>
                         <button class="subheader_btn">заказать звонок</button>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <!--container subheader-->
+            
+        </div> <!--subheader-->
     </header>   
     
     <section class="promo">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-12 offset-md-0 col-lg-10 offset-md-1">
                     <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
                     <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
                     <div class="promo_descr">
@@ -236,22 +243,22 @@
         </div>
     </section> <!--Mobile-->
 
-    <section class="car">
+    <section class="choice">
         <div class="container">
             <div class="black"></div>
-            <div class="label label_white">Возможности</div>
-            <div class="title title_white">ВЫБОР - ОТЛИЧНАЯ ШТУКА!</div>
-            <div class="subtitle subtitle_white">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
+            <div class="label label_white">возможности</div>
+            <h2 class="title title_white hidden-320">Выбор - отличная штука!</h2>
+            <div class="subtitle subtitle_white hidden-320">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
 
-            <img class="car_img" src="img/car.png" alt="avto">
-            <div class="car_descr">
+            <img src="img/car.png" alt="uber car" class="choice_img">
+            <div class="choice_descr">
                 Машины на каждый день.<br>
                 Лучше, быстрее и дешевле, чем такси
             </div>
         </div>
     </section>  <!--Car-->
 
-    <section class="require">
+    <section class="require" id="require">
         <div class="container">
             <div class="label">Возможности</div>
             <div class="title">УСЛОВИЯ И ТРЕБОВАНИЯ</div>
@@ -329,31 +336,60 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-4 footer_links main">
-                  <a href="#">НА ГЛАВНУЮ</a>
-                  <a href="#">ГОРОДА</a>
-                  <a href="#">ДЛЯ ВОДИТЕЛЕЙ</a>
+    <footer>
+        <div class="footer_divider"></div>
+        <div class="footer_wrapper">
+            <div>
+                <div class="footer_social">
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-facebook-f"></i> -->
+                        <!-- <span class="icon-adobeacrobatreader"></span>  -->
+                    < </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-4 footer_links">
-                  <a href="#">ЦЕНТР ПОДДЕРЖКИ</a>
-                  <a href="#">ВАКАНСИИ</a>
-                  <a href="#">РАЗРАБОТЧИКИ</a>
-                  <a href="#">БЛОГ</a>
-                  <a href="#">О НАС</a>
+            <div>
+                <div class="footer_links">
+                    <div class="footer_links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">города</a>
+                        <a href="#">для водителей</a>
+                    </div>
+                    <div class="footer_links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer_links_lang">Русский</a>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-4 language_links">
-                  <a href="#">Русский</a>
+            <div>
+                <div class="footer_mobile">
+                    <a href="#">
+                        <img src="img/app_store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="img/google_play.png" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="img/windows_store.png" alt="Windows store">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
